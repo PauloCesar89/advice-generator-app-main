@@ -37,7 +37,7 @@ body{
     background-color: var(--Dark-Grayish-Blue);
     border-radius: 20px;
     padding: 25px;
-    position: absolute;
+    position: relative;
 }
 
 .icon-dice{
@@ -45,9 +45,9 @@ body{
     justify-content: center;
     top: 0;
     left: 0;
-    position: relative;
-    /* transform: translate(500%, 650%); */
-    transform:  translate(0%, 140%);
+    position: absolute;
+    transform: translate(500%, 650%);
+    /* transform:  translate(0%, 140%); */
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -72,6 +72,7 @@ span{
 p{
     color: var(--Light-Cyan);
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .icon-dice:hover{
@@ -80,12 +81,18 @@ p{
     cursor: pointer;
 }
 
-@media screen and (max-width: 375px){
+
+
+@media screen and (max-width: 580px){
 
     .box{
         width: 300px;
         height: 350px;
         background-image: url(/images/pattern-divider-mobile.svg);
+    }
+
+    .icon-dice{
+        transform: translate(300%, 750%);
     }
     
     }
